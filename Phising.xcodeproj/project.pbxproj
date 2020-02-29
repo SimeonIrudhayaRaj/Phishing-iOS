@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB4E09E323FEEED700C6AD68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09E223FEEED700C6AD68 /* AppDelegate.swift */; };
+		CB4E09E523FEEED700C6AD68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09E423FEEED700C6AD68 /* SceneDelegate.swift */; };
+		CB4E09E723FEEED700C6AD68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09E623FEEED700C6AD68 /* ViewController.swift */; };
+		CB4E09EA23FEEED700C6AD68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E09E823FEEED700C6AD68 /* Main.storyboard */; };
+		CB4E09EC23FEEED700C6AD68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4E09EB23FEEED700C6AD68 /* Assets.xcassets */; };
+		CB4E09EF23FEEED700C6AD68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E09ED23FEEED700C6AD68 /* LaunchScreen.storyboard */; };
+		CB4E09FA23FEEED800C6AD68 /* PhisingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09F923FEEED800C6AD68 /* PhisingTests.swift */; };
+		CB4E0A0523FEEED800C6AD68 /* PhisingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A0423FEEED800C6AD68 /* PhisingUITests.swift */; };
+		CB4E0A1323FEF26C00C6AD68 /* ViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1223FEF26C00C6AD68 /* ViewModelImpl.swift */; };
+		CB4E0A1523FEF3CC00C6AD68 /* APIHandlerAlamofireImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1423FEF3CC00C6AD68 /* APIHandlerAlamofireImpl.swift */; };
+		CB4E0A1823FEF40000C6AD68 /* APIHandlerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1723FEF40000C6AD68 /* APIHandlerAssembler.swift */; };
+		CB4E0A1A23FEF41600C6AD68 /* ViewModelAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1923FEF41600C6AD68 /* ViewModelAssembler.swift */; };
+		CB4E0A1D23FEF48C00C6AD68 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1C23FEF48C00C6AD68 /* ViewModel.swift */; };
+		CB4E0A1F23FEF4EE00C6AD68 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1E23FEF4EE00C6AD68 /* View.swift */; };
+		CB4E0A2123FEF90B00C6AD68 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A2023FEF90B00C6AD68 /* ApiHandler.swift */; };
+		CB4E0A2623FFC4D500C6AD68 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A2523FFC4D500C6AD68 /* DataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB4E09F623FEEED800C6AD68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4E09D723FEEED700C6AD68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4E09DE23FEEED700C6AD68;
+			remoteInfo = Phising;
+		};
+		CB4E0A0123FEEED800C6AD68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4E09D723FEEED700C6AD68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4E09DE23FEEED700C6AD68;
+			remoteInfo = Phising;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB4E09DF23FEEED700C6AD68 /* Phising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phising.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E09E223FEEED700C6AD68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB4E09E423FEEED700C6AD68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB4E09E623FEEED700C6AD68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB4E09E923FEEED700C6AD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB4E09EB23FEEED700C6AD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB4E09EE23FEEED700C6AD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB4E09F023FEEED700C6AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4E09F523FEEED800C6AD68 /* PhisingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhisingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E09F923FEEED800C6AD68 /* PhisingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhisingTests.swift; sourceTree = "<group>"; };
+		CB4E09FB23FEEED800C6AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4E0A0023FEEED800C6AD68 /* PhisingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhisingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E0A0423FEEED800C6AD68 /* PhisingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhisingUITests.swift; sourceTree = "<group>"; };
+		CB4E0A0623FEEED800C6AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4E0A1223FEF26C00C6AD68 /* ViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelImpl.swift; sourceTree = "<group>"; };
+		CB4E0A1423FEF3CC00C6AD68 /* APIHandlerAlamofireImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandlerAlamofireImpl.swift; sourceTree = "<group>"; };
+		CB4E0A1723FEF40000C6AD68 /* APIHandlerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandlerAssembler.swift; sourceTree = "<group>"; };
+		CB4E0A1923FEF41600C6AD68 /* ViewModelAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembler.swift; sourceTree = "<group>"; };
+		CB4E0A1C23FEF48C00C6AD68 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CB4E0A1E23FEF4EE00C6AD68 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CB4E0A2023FEF90B00C6AD68 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		CB4E0A2523FFC4D500C6AD68 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB4E09DC23FEEED700C6AD68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E09F223FEEED700C6AD68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E09FD23FEEED800C6AD68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB03FD74240A90B40001CC8C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E09E623FEEED700C6AD68 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CB4E09D623FEEED700C6AD68 = {
+			isa = PBXGroup;
+			children = (
+				CB4E09E123FEEED700C6AD68 /* Phising */,
+				CB4E09F823FEEED800C6AD68 /* PhisingTests */,
+				CB4E0A0323FEEED800C6AD68 /* PhisingUITests */,
+				CB4E09E023FEEED700C6AD68 /* Products */,
+				D75E9989D4C461E958547093 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CB4E09E023FEEED700C6AD68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E09DF23FEEED700C6AD68 /* Phising.app */,
+				CB4E09F523FEEED800C6AD68 /* PhisingTests.xctest */,
+				CB4E0A0023FEEED800C6AD68 /* PhisingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB4E09E123FEEED700C6AD68 /* Phising */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E09E423FEEED700C6AD68 /* SceneDelegate.swift */,
+				CB4E09E223FEEED700C6AD68 /* AppDelegate.swift */,
+				CB4E0A2423FFC4BC00C6AD68 /* DataModel */,
+				CB4E0A1B23FEF47200C6AD68 /* Protocols */,
+				CB4E0A1623FEF3DA00C6AD68 /* Assemblers */,
+				CB4E0A2323FF004700C6AD68 /* StoryBoard */,
+				CB4E0A2223FF003200C6AD68 /* Implementations */,
+				CB03FD74240A90B40001CC8C /* ViewController */,
+				CB4E09EB23FEEED700C6AD68 /* Assets.xcassets */,
+				CB4E09F023FEEED700C6AD68 /* Info.plist */,
+			);
+			path = Phising;
+			sourceTree = "<group>";
+		};
+		CB4E09F823FEEED800C6AD68 /* PhisingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E09F923FEEED800C6AD68 /* PhisingTests.swift */,
+				CB4E09FB23FEEED800C6AD68 /* Info.plist */,
+			);
+			path = PhisingTests;
+			sourceTree = "<group>";
+		};
+		CB4E0A0323FEEED800C6AD68 /* PhisingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0A0423FEEED800C6AD68 /* PhisingUITests.swift */,
+				CB4E0A0623FEEED800C6AD68 /* Info.plist */,
+			);
+			path = PhisingUITests;
+			sourceTree = "<group>";
+		};
+		CB4E0A1623FEF3DA00C6AD68 /* Assemblers */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0A1723FEF40000C6AD68 /* APIHandlerAssembler.swift */,
+				CB4E0A1923FEF41600C6AD68 /* ViewModelAssembler.swift */,
+			);
+			path = Assemblers;
+			sourceTree = "<group>";
+		};
+		CB4E0A1B23FEF47200C6AD68 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0A1C23FEF48C00C6AD68 /* ViewModel.swift */,
+				CB4E0A1E23FEF4EE00C6AD68 /* View.swift */,
+				CB4E0A2023FEF90B00C6AD68 /* ApiHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CB4E0A2223FF003200C6AD68 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0A1223FEF26C00C6AD68 /* ViewModelImpl.swift */,
+				CB4E0A1423FEF3CC00C6AD68 /* APIHandlerAlamofireImpl.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		CB4E0A2323FF004700C6AD68 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E09E823FEEED700C6AD68 /* Main.storyboard */,
+				CB4E09ED23FEEED700C6AD68 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		CB4E0A2423FFC4BC00C6AD68 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0A2523FFC4D500C6AD68 /* DataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D75E9989D4C461E958547093 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB4E09DE23FEEED700C6AD68 /* Phising */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4E0A0923FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "Phising" */;
+			buildPhases = (
+				CB4E09DB23FEEED700C6AD68 /* Sources */,
+				CB4E09DC23FEEED700C6AD68 /* Frameworks */,
+				CB4E09DD23FEEED700C6AD68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phising;
+			productName = Phising;
+			productReference = CB4E09DF23FEEED700C6AD68 /* Phising.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB4E09F423FEEED700C6AD68 /* PhisingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4E0A0C23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingTests" */;
+			buildPhases = (
+				CB4E09F123FEEED700C6AD68 /* Sources */,
+				CB4E09F223FEEED700C6AD68 /* Frameworks */,
+				CB4E09F323FEEED700C6AD68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB4E09F723FEEED800C6AD68 /* PBXTargetDependency */,
+			);
+			name = PhisingTests;
+			productName = PhisingTests;
+			productReference = CB4E09F523FEEED800C6AD68 /* PhisingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB4E09FF23FEEED800C6AD68 /* PhisingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4E0A0F23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingUITests" */;
+			buildPhases = (
+				CB4E09FC23FEEED800C6AD68 /* Sources */,
+				CB4E09FD23FEEED800C6AD68 /* Frameworks */,
+				CB4E09FE23FEEED800C6AD68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB4E0A0223FEEED800C6AD68 /* PBXTargetDependency */,
+			);
+			name = PhisingUITests;
+			productName = PhisingUITests;
+			productReference = CB4E0A0023FEEED800C6AD68 /* PhisingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB4E09D723FEEED700C6AD68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Simeon Irudhaya Raj J";
+				TargetAttributes = {
+					CB4E09DE23FEEED700C6AD68 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CB4E09F423FEEED700C6AD68 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CB4E09DE23FEEED700C6AD68;
+					};
+					CB4E09FF23FEEED800C6AD68 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CB4E09DE23FEEED700C6AD68;
+					};
+				};
+			};
+			buildConfigurationList = CB4E09DA23FEEED700C6AD68 /* Build configuration list for PBXProject "Phising" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB4E09D623FEEED700C6AD68;
+			productRefGroup = CB4E09E023FEEED700C6AD68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB4E09DE23FEEED700C6AD68 /* Phising */,
+				CB4E09F423FEEED700C6AD68 /* PhisingTests */,
+				CB4E09FF23FEEED800C6AD68 /* PhisingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB4E09DD23FEEED700C6AD68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E09EF23FEEED700C6AD68 /* LaunchScreen.storyboard in Resources */,
+				CB4E09EC23FEEED700C6AD68 /* Assets.xcassets in Resources */,
+				CB4E09EA23FEEED700C6AD68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E09F323FEEED700C6AD68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E09FE23FEEED800C6AD68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB4E09DB23FEEED700C6AD68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E0A1823FEF40000C6AD68 /* APIHandlerAssembler.swift in Sources */,
+				CB4E09E723FEEED700C6AD68 /* ViewController.swift in Sources */,
+				CB4E0A2623FFC4D500C6AD68 /* DataModel.swift in Sources */,
+				CB4E09E323FEEED700C6AD68 /* AppDelegate.swift in Sources */,
+				CB4E0A2123FEF90B00C6AD68 /* ApiHandler.swift in Sources */,
+				CB4E0A1523FEF3CC00C6AD68 /* APIHandlerAlamofireImpl.swift in Sources */,
+				CB4E0A1A23FEF41600C6AD68 /* ViewModelAssembler.swift in Sources */,
+				CB4E0A1F23FEF4EE00C6AD68 /* View.swift in Sources */,
+				CB4E0A1323FEF26C00C6AD68 /* ViewModelImpl.swift in Sources */,
+				CB4E0A1D23FEF48C00C6AD68 /* ViewModel.swift in Sources */,
+				CB4E09E523FEEED700C6AD68 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E09F123FEEED700C6AD68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E09FA23FEEED800C6AD68 /* PhisingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E09FC23FEEED800C6AD68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E0A0523FEEED800C6AD68 /* PhisingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB4E09F723FEEED800C6AD68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4E09DE23FEEED700C6AD68 /* Phising */;
+			targetProxy = CB4E09F623FEEED800C6AD68 /* PBXContainerItemProxy */;
+		};
+		CB4E0A0223FEEED800C6AD68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4E09DE23FEEED700C6AD68 /* Phising */;
+			targetProxy = CB4E0A0123FEEED800C6AD68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB4E09E823FEEED700C6AD68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4E09E923FEEED700C6AD68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB4E09ED23FEEED700C6AD68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4E09EE23FEEED700C6AD68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB4E0A0723FEEED800C6AD68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB4E0A0823FEEED800C6AD68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB4E0A0A23FEEED800C6AD68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Phising/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sir.Phising;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB4E0A0B23FEEED800C6AD68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Phising/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sir.Phising;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB4E0A0D23FEEED800C6AD68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhisingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sir.PhisingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phising.app/Phising";
+			};
+			name = Debug;
+		};
+		CB4E0A0E23FEEED800C6AD68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhisingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sir.PhisingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phising.app/Phising";
+			};
+			name = Release;
+		};
+		CB4E0A1023FEEED800C6AD68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhisingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sir.PhisingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Phising;
+			};
+			name = Debug;
+		};
+		CB4E0A1123FEEED800C6AD68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhisingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sir.PhisingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Phising;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB4E09DA23FEEED700C6AD68 /* Build configuration list for PBXProject "Phising" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4E0A0723FEEED800C6AD68 /* Debug */,
+				CB4E0A0823FEEED800C6AD68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4E0A0923FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "Phising" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4E0A0A23FEEED800C6AD68 /* Debug */,
+				CB4E0A0B23FEEED800C6AD68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4E0A0C23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4E0A0D23FEEED800C6AD68 /* Debug */,
+				CB4E0A0E23FEEED800C6AD68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4E0A0F23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4E0A1023FEEED800C6AD68 /* Debug */,
+				CB4E0A1123FEEED800C6AD68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB4E09D723FEEED700C6AD68 /* Project object */;
+}
