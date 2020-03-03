@@ -13,4 +13,5 @@ protocol MainView {
     func convert(cgRect: CGRect) -> CGRect
     func addKeyboardListener()
     func addTapListener()
+    func showFeedBackAlert()
 }

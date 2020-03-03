@@ -31,7 +31,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJS-TW-0Co">
-                                                <rect key="frame" x="170" y="750" width="74" height="48"/>
+                                                <rect key="frame" x="50" y="750" width="74" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Verify">
                                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,17 +45,29 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMf-yb-cED">
+                                                <rect key="frame" x="237" y="750" width="127" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Feedback">
+                                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="feedBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzM-AP-usb"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="tJS-TW-0Co" secondAttribute="bottom" constant="20" id="BUa-wD-rJ9"/>
+                                            <constraint firstAttribute="trailing" secondItem="DMf-yb-cED" secondAttribute="trailing" constant="50" id="BwA-fN-Mo6"/>
                                             <constraint firstItem="9XW-TP-Zdx" firstAttribute="centerX" secondItem="sCz-9k-kAA" secondAttribute="centerX" id="Hc8-wo-JJm"/>
                                             <constraint firstItem="9XW-TP-Zdx" firstAttribute="top" secondItem="o9A-bj-gTR" secondAttribute="top" id="I9x-ji-Z3X"/>
+                                            <constraint firstItem="tJS-TW-0Co" firstAttribute="leading" secondItem="CpH-bT-6An" secondAttribute="leading" constant="50" id="IWK-n1-wYL"/>
                                             <constraint firstItem="o9A-bj-gTR" firstAttribute="top" secondItem="CpH-bT-6An" secondAttribute="top" constant="20" id="JjL-4k-Xve"/>
-                                            <constraint firstItem="tJS-TW-0Co" firstAttribute="centerX" secondItem="9XW-TP-Zdx" secondAttribute="centerX" id="Jz4-H9-LlM"/>
                                             <constraint firstItem="o9A-bj-gTR" firstAttribute="centerX" secondItem="9XW-TP-Zdx" secondAttribute="centerX" id="N8k-Xo-lJZ"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="sCz-9k-kAA" secondAttribute="trailing" constant="20" id="YJm-JA-VnP"/>
                                             <constraint firstItem="tJS-TW-0Co" firstAttribute="top" secondItem="sCz-9k-kAA" secondAttribute="bottom" constant="10" id="bz9-NR-E6H"/>
+                                            <constraint firstAttribute="bottom" secondItem="DMf-yb-cED" secondAttribute="bottom" constant="20" id="geH-Lp-dNe"/>
                                             <constraint firstItem="9XW-TP-Zdx" firstAttribute="height" secondItem="CpH-bT-6An" secondAttribute="height" multiplier="0.976415" id="id5-va-be1"/>
                                             <constraint firstItem="sCz-9k-kAA" firstAttribute="leading" secondItem="CpH-bT-6An" secondAttribute="leadingMargin" constant="20" id="ios-9a-Yet"/>
                                             <constraint firstItem="9XW-TP-Zdx" firstAttribute="width" secondItem="CpH-bT-6An" secondAttribute="width" id="kdn-7X-DtJ"/>

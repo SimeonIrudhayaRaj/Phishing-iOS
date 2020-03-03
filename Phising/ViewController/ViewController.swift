@@ -33,12 +33,48 @@ extension ViewController {
 //MARK: - IBActions
 extension ViewController {
     @IBAction func verifyButton(_ sender: Any) {
+        guard let url = urlTextField.text else {
+            return
+        }
+        if url == "" {
+            let alert = UIAlertController(title: "Alert", message: "Enter Url", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
         viewModel.verifyButtonPressed(URL: urlTextField.text ?? "")
+    }
+
+    @IBAction func feedBackButton(_ sender: Any) {
+        viewModel.feedBackButtonPressed()
     }
 }
 
 //MARK: - View
 extension ViewController: MainView {
+    func showFeedBackAlert() {
+        guard let url = urlTextField.text else {
+            return
+        }
+        if url == "" {
+            let alert = UIAlertController(title: "Alert", message: "Enter Url", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        let feedbackAlert = UIAlertController(title: "Feedback", message: "Choose the PhisingPossibility", preferredStyle: UIAlertController.Style.alert)
+
+        feedbackAlert.addAction(UIAlertAction(title: "High", style: .default, handler: { (action: UIAlertAction!) in
+            self.viewModel.feedbackResult(url: url, highChance: true)
+          }))
+
+        feedbackAlert.addAction(UIAlertAction(title: "Low", style: .cancel, handler: { (action: UIAlertAction!) in
+            self.viewModel.feedbackResult(url: url, highChance: true)
+          }))
+
+        present(feedbackAlert, animated: true, completion: nil)
+    }
+    
     func showResult(message: String) {
         let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
@@ -52,7 +88,6 @@ extension ViewController: MainView {
 
     func hideKeyboard() {
         self.view.endEditing(true)
-
     }
 
     func convert(cgRect: CGRect) -> CGRect {

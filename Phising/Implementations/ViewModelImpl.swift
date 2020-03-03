@@ -14,7 +14,7 @@ class ViewModelImpl: ViewModel {
         self.apiHandler = apiHandler
     }
     func verifyButtonPressed(URL: String) {
-        let result = apiHandler.makeReq(URL: URL)
+        let result = apiHandler.makeVerifyReq(URL: URL)
         view?.showResult(message: result)
     }
 
@@ -42,5 +42,13 @@ class ViewModelImpl: ViewModel {
 
     func viewTapped() {
         self.view?.hideKeyboard()
+    }
+
+    func feedBackButtonPressed() {
+        view.showFeedBackAlert()
+    }
+
+    func feedbackResult(url: String, highChance: Bool) {
+        apiHandler.sendFeedBack(url: url, highChance: highChance)
     }
 }

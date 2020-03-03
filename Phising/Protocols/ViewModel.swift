@@ -13,4 +13,6 @@ protocol ViewModel {
     func keyBoardShown(notification: Notification)
     func keyboardHidden()
     func viewTapped()
+    func feedBackButtonPressed()
+    func feedbackResult(url: String, highChance: Bool)
 }

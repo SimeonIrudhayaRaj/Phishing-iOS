@@ -7,5 +7,6 @@
 //
 
 protocol ApiHandler {
-    func makeReq(URL: String) -> String 
+    func makeVerifyReq(URL: String) -> String
+    func sendFeedBack(url: String, highChance: Bool)
 }

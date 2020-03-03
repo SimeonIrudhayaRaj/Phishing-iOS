@@ -8,7 +8,17 @@
 import Alamofire
 
 class APIHandlerAlamofireImpl: ApiHandler {
-    func makeReq(URL url: String) -> String {
+    func sendFeedBack(url: String, highChance: Bool) {
+        Alamofire.request("https://www.google.com",
+                          method: .post,
+                          parameters: ["url": url,"chance": highChance],
+                          encoding: URLEncoding.default,
+                          headers: nil).response {response in
+                            print(response.data)
+        }
+    }
+    
+    func makeVerifyReq(URL url: String) -> String {
         Alamofire.request("https://www.google.com",
                           method: .get,
                           parameters: ["url": url],
