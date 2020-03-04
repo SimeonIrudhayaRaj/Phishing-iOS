@@ -1,0 +1,6 @@
+framework module Pods_PhisingTests {
+  umbrella header "Pods-PhisingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
