@@ -1,5 +1,5 @@
 //
-//  DataModel.swift
+//  verificationResponseModel.swift
 //  Phising
 //
 //  Created by Simeon Irudhaya Raj J on 21/02/20.
