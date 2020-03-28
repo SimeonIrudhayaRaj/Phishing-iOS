@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Phising" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Phishing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,9 +55,14 @@
                                                     <action selector="feedBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzM-AP-usb"/>
                                                 </connections>
                                             </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tn9-Pc-bTF">
+                                                <rect key="frame" x="92" y="162" width="230" height="2"/>
+                                            </progressView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tn9-Pc-bTF" secondAttribute="trailing" constant="92" id="05k-85-QN0"/>
+                                            <constraint firstItem="tn9-Pc-bTF" firstAttribute="top" secondItem="o9A-bj-gTR" secondAttribute="bottom" constant="100" id="7Qu-DE-hn7"/>
                                             <constraint firstAttribute="bottom" secondItem="tJS-TW-0Co" secondAttribute="bottom" constant="20" id="BUa-wD-rJ9"/>
                                             <constraint firstAttribute="trailing" secondItem="DMf-yb-cED" secondAttribute="trailing" constant="50" id="BwA-fN-Mo6"/>
                                             <constraint firstItem="9XW-TP-Zdx" firstAttribute="centerX" secondItem="sCz-9k-kAA" secondAttribute="centerX" id="Hc8-wo-JJm"/>
@@ -67,6 +72,7 @@
                                             <constraint firstItem="o9A-bj-gTR" firstAttribute="centerX" secondItem="9XW-TP-Zdx" secondAttribute="centerX" id="N8k-Xo-lJZ"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="sCz-9k-kAA" secondAttribute="trailing" constant="20" id="YJm-JA-VnP"/>
                                             <constraint firstItem="tJS-TW-0Co" firstAttribute="top" secondItem="sCz-9k-kAA" secondAttribute="bottom" constant="10" id="bz9-NR-E6H"/>
+                                            <constraint firstItem="tn9-Pc-bTF" firstAttribute="centerX" secondItem="CpH-bT-6An" secondAttribute="centerX" id="dOJ-bz-kxa"/>
                                             <constraint firstAttribute="bottom" secondItem="DMf-yb-cED" secondAttribute="bottom" constant="20" id="geH-Lp-dNe"/>
                                             <constraint firstItem="9XW-TP-Zdx" firstAttribute="height" secondItem="CpH-bT-6An" secondAttribute="height" multiplier="0.976415" id="id5-va-be1"/>
                                             <constraint firstItem="sCz-9k-kAA" firstAttribute="leading" secondItem="CpH-bT-6An" secondAttribute="leadingMargin" constant="20" id="ios-9a-Yet"/>
@@ -96,6 +102,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="tn9-Pc-bTF" id="Khh-rn-HOT"/>
                         <outlet property="scrollView" destination="UkH-kA-Vau" id="zvr-8o-ttZ"/>
                         <outlet property="urlTextField" destination="sCz-9k-kAA" id="gtt-C7-dM5"/>
                     </connections>

@@ -6,6 +6,7 @@
 //  Copyright © 2020 Simeon Irudhaya Raj J. All rights reserved.
 //
 
-class DataModel: Decodable {
-    let value: String
+class verificationResponseModel: Decodable {
+    let status: Int
+    let message: String
 }

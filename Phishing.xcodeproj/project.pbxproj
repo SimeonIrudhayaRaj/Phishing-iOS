@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DDE3411564630B712D88BD1 /* Pods_Phising.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDCC4B4B329D18CD4D9AE26 /* Pods_Phising.framework */; };
-		A5034CD771CC15E4ACA9B5EA /* Pods_PhisingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8259C2D1E9BA0B8CED2815BB /* Pods_PhisingTests.framework */; };
-		A72EC5E98B54A2D4D741359A /* Pods_Phising_PhisingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78E066238CC95B924E4A47B /* Pods_Phising_PhisingUITests.framework */; };
+		CB221E55242F389900B5E701 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB221E54242F389900B5E701 /* String.swift */; };
+		CB3C95D22420B3C600F5F3E0 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB3C95DB2420E1FC00F5F3E0 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3C95DA2420E1FC00F5F3E0 /* URLConstants.swift */; };
+		CB3C95DD2420E91900F5F3E0 /* urlstatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3C95DC2420E91900F5F3E0 /* urlstatus.swift */; };
 		CB4E09E323FEEED700C6AD68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09E223FEEED700C6AD68 /* AppDelegate.swift */; };
 		CB4E09E523FEEED700C6AD68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09E423FEEED700C6AD68 /* SceneDelegate.swift */; };
 		CB4E09E723FEEED700C6AD68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E09E623FEEED700C6AD68 /* ViewController.swift */; };
@@ -25,7 +26,7 @@
 		CB4E0A1D23FEF48C00C6AD68 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1C23FEF48C00C6AD68 /* ViewModel.swift */; };
 		CB4E0A1F23FEF4EE00C6AD68 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A1E23FEF4EE00C6AD68 /* View.swift */; };
 		CB4E0A2123FEF90B00C6AD68 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A2023FEF90B00C6AD68 /* ApiHandler.swift */; };
-		CB4E0A2623FFC4D500C6AD68 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A2523FFC4D500C6AD68 /* DataModel.swift */; };
+		CB4E0A2623FFC4D500C6AD68 /* verificationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0A2523FFC4D500C6AD68 /* verificationResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB3C95CE2420B3A000F5F3E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB3C95D22420B3C600F5F3E0 /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		185D806F6D42AB905AB506CF /* Pods-Phising-PhisingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phising-PhisingUITests.release.xcconfig"; path = "Target Support Files/Pods-Phising-PhisingUITests/Pods-Phising-PhisingUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1CDCC4B4B329D18CD4D9AE26 /* Pods_Phising.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phising.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DDA54878FF404DEF92C56DC /* Pods-Phising-PhisingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phising-PhisingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Phising-PhisingUITests/Pods-Phising-PhisingUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		67479BF19FE76D252E648E18 /* Pods-PhisingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhisingTests.release.xcconfig"; path = "Target Support Files/Pods-PhisingTests/Pods-PhisingTests.release.xcconfig"; sourceTree = "<group>"; };
-		74FE853F5A69C70651AF86EC /* Pods-PhisingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhisingTests.debug.xcconfig"; path = "Target Support Files/Pods-PhisingTests/Pods-PhisingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8259C2D1E9BA0B8CED2815BB /* Pods_PhisingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhisingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4E09DF23FEEED700C6AD68 /* Phising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phising.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB221E54242F389900B5E701 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CB3C95C32420B2F800F5F3E0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3C95D72420B7A200F5F3E0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3C95DA2420E1FC00F5F3E0 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		CB3C95DC2420E91900F5F3E0 /* urlstatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlstatus.swift; sourceTree = "<group>"; };
+		CB4E09DF23FEEED700C6AD68 /* Phishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phishing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4E09E223FEEED700C6AD68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB4E09E423FEEED700C6AD68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB4E09E623FEEED700C6AD68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,10 +74,10 @@
 		CB4E09EB23FEEED700C6AD68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4E09EE23FEEED700C6AD68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4E09F023FEEED700C6AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB4E09F523FEEED800C6AD68 /* PhisingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhisingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E09F523FEEED800C6AD68 /* PhishingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhishingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4E09F923FEEED800C6AD68 /* PhisingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhisingTests.swift; sourceTree = "<group>"; };
 		CB4E09FB23FEEED800C6AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB4E0A0023FEEED800C6AD68 /* PhisingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhisingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E0A0023FEEED800C6AD68 /* PhishingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhishingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4E0A0423FEEED800C6AD68 /* PhisingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhisingUITests.swift; sourceTree = "<group>"; };
 		CB4E0A0623FEEED800C6AD68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4E0A1223FEF26C00C6AD68 /* ViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelImpl.swift; sourceTree = "<group>"; };
@@ -73,10 +87,7 @@
 		CB4E0A1C23FEF48C00C6AD68 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CB4E0A1E23FEF4EE00C6AD68 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		CB4E0A2023FEF90B00C6AD68 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
-		CB4E0A2523FFC4D500C6AD68 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		D78E066238CC95B924E4A47B /* Pods_Phising_PhisingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phising_PhisingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7A734C221E76C5E44D0E272 /* Pods-Phising.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phising.release.xcconfig"; path = "Target Support Files/Pods-Phising/Pods-Phising.release.xcconfig"; sourceTree = "<group>"; };
-		ED22E2F1C735D4D1D16C8CAA /* Pods-Phising.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phising.debug.xcconfig"; path = "Target Support Files/Pods-Phising/Pods-Phising.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4E0A2523FFC4D500C6AD68 /* verificationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verificationResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDE3411564630B712D88BD1 /* Pods_Phising.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5034CD771CC15E4ACA9B5EA /* Pods_PhisingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72EC5E98B54A2D4D741359A /* Pods_Phising_PhisingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +118,8 @@
 		527866627B7095195D911A47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1CDCC4B4B329D18CD4D9AE26 /* Pods_Phising.framework */,
-				D78E066238CC95B924E4A47B /* Pods_Phising_PhisingUITests.framework */,
-				8259C2D1E9BA0B8CED2815BB /* Pods_PhisingTests.framework */,
+				CB3C95D72420B7A200F5F3E0 /* Alamofire.framework */,
+				CB3C95C32420B2F800F5F3E0 /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +130,22 @@
 				CB4E09E623FEEED700C6AD68 /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CB221E53242F386C00B5E701 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB221E54242F389900B5E701 /* String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CB221E56242F454300B5E701 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C95DA2420E1FC00F5F3E0 /* URLConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		CB4E09D623FEEED700C6AD68 = {
@@ -140,9 +163,9 @@
 		CB4E09E023FEEED700C6AD68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB4E09DF23FEEED700C6AD68 /* Phising.app */,
-				CB4E09F523FEEED800C6AD68 /* PhisingTests.xctest */,
-				CB4E0A0023FEEED800C6AD68 /* PhisingUITests.xctest */,
+				CB4E09DF23FEEED700C6AD68 /* Phishing.app */,
+				CB4E09F523FEEED800C6AD68 /* PhishingTests.xctest */,
+				CB4E0A0023FEEED800C6AD68 /* PhishingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +181,8 @@
 				CB4E0A2323FF004700C6AD68 /* StoryBoard */,
 				CB4E0A2223FF003200C6AD68 /* Implementations */,
 				CB03FD74240A90B40001CC8C /* ViewController */,
+				CB221E56242F454300B5E701 /* Constants */,
+				CB221E53242F386C00B5E701 /* Extension */,
 				CB4E09EB23FEEED700C6AD68 /* Assets.xcassets */,
 				CB4E09F023FEEED700C6AD68 /* Info.plist */,
 			);
@@ -222,7 +247,8 @@
 		CB4E0A2423FFC4BC00C6AD68 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				CB4E0A2523FFC4D500C6AD68 /* DataModel.swift */,
+				CB4E0A2523FFC4D500C6AD68 /* verificationResponseModel.swift */,
+				CB3C95DC2420E91900F5F3E0 /* urlstatus.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -230,12 +256,6 @@
 		D75E9989D4C461E958547093 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED22E2F1C735D4D1D16C8CAA /* Pods-Phising.debug.xcconfig */,
-				E7A734C221E76C5E44D0E272 /* Pods-Phising.release.xcconfig */,
-				4DDA54878FF404DEF92C56DC /* Pods-Phising-PhisingUITests.debug.xcconfig */,
-				185D806F6D42AB905AB506CF /* Pods-Phising-PhisingUITests.release.xcconfig */,
-				74FE853F5A69C70651AF86EC /* Pods-PhisingTests.debug.xcconfig */,
-				67479BF19FE76D252E648E18 /* Pods-PhisingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -243,30 +263,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB4E09DE23FEEED700C6AD68 /* Phising */ = {
+		CB4E09DE23FEEED700C6AD68 /* Phishing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4E0A0923FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "Phising" */;
+			buildConfigurationList = CB4E0A0923FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "Phishing" */;
 			buildPhases = (
-				F2AB67EBBDA53A21A3EE32C0 /* [CP] Check Pods Manifest.lock */,
 				CB4E09DB23FEEED700C6AD68 /* Sources */,
 				CB4E09DC23FEEED700C6AD68 /* Frameworks */,
 				CB4E09DD23FEEED700C6AD68 /* Resources */,
-				CFAEB66C9171D85B64A052C4 /* [CP] Embed Pods Frameworks */,
+				CB3C95CE2420B3A000F5F3E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Phising;
+			name = Phishing;
 			productName = Phising;
-			productReference = CB4E09DF23FEEED700C6AD68 /* Phising.app */;
+			productReference = CB4E09DF23FEEED700C6AD68 /* Phishing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB4E09F423FEEED700C6AD68 /* PhisingTests */ = {
+		CB4E09F423FEEED700C6AD68 /* PhishingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4E0A0C23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingTests" */;
+			buildConfigurationList = CB4E0A0C23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhishingTests" */;
 			buildPhases = (
-				8C0E8656F1F0D3171E635556 /* [CP] Check Pods Manifest.lock */,
 				CB4E09F123FEEED700C6AD68 /* Sources */,
 				CB4E09F223FEEED700C6AD68 /* Frameworks */,
 				CB4E09F323FEEED700C6AD68 /* Resources */,
@@ -276,29 +294,27 @@
 			dependencies = (
 				CB4E09F723FEEED800C6AD68 /* PBXTargetDependency */,
 			);
-			name = PhisingTests;
+			name = PhishingTests;
 			productName = PhisingTests;
-			productReference = CB4E09F523FEEED800C6AD68 /* PhisingTests.xctest */;
+			productReference = CB4E09F523FEEED800C6AD68 /* PhishingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB4E09FF23FEEED800C6AD68 /* PhisingUITests */ = {
+		CB4E09FF23FEEED800C6AD68 /* PhishingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4E0A0F23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingUITests" */;
+			buildConfigurationList = CB4E0A0F23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhishingUITests" */;
 			buildPhases = (
-				CB971182E677507763E190C8 /* [CP] Check Pods Manifest.lock */,
 				CB4E09FC23FEEED800C6AD68 /* Sources */,
 				CB4E09FD23FEEED800C6AD68 /* Frameworks */,
 				CB4E09FE23FEEED800C6AD68 /* Resources */,
-				597440FCA035CFFFA8069193 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CB4E0A0223FEEED800C6AD68 /* PBXTargetDependency */,
 			);
-			name = PhisingUITests;
+			name = PhishingUITests;
 			productName = PhisingUITests;
-			productReference = CB4E0A0023FEEED800C6AD68 /* PhisingUITests.xctest */;
+			productReference = CB4E0A0023FEEED800C6AD68 /* PhishingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +340,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB4E09DA23FEEED700C6AD68 /* Build configuration list for PBXProject "Phising" */;
+			buildConfigurationList = CB4E09DA23FEEED700C6AD68 /* Build configuration list for PBXProject "Phishing" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -337,9 +353,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB4E09DE23FEEED700C6AD68 /* Phising */,
-				CB4E09F423FEEED700C6AD68 /* PhisingTests */,
-				CB4E09FF23FEEED800C6AD68 /* PhisingUITests */,
+				CB4E09DE23FEEED700C6AD68 /* Phishing */,
+				CB4E09F423FEEED700C6AD68 /* PhishingTests */,
+				CB4E09FF23FEEED800C6AD68 /* PhishingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,109 +387,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		597440FCA035CFFFA8069193 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Phising-PhisingUITests/Pods-Phising-PhisingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Phising-PhisingUITests/Pods-Phising-PhisingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Phising-PhisingUITests/Pods-Phising-PhisingUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C0E8656F1F0D3171E635556 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PhisingTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB971182E677507763E190C8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Phising-PhisingUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CFAEB66C9171D85B64A052C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Phising/Pods-Phising-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Phising/Pods-Phising-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Phising/Pods-Phising-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2AB67EBBDA53A21A3EE32C0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Phising-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CB4E09DB23FEEED700C6AD68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -481,13 +394,16 @@
 			files = (
 				CB4E0A1823FEF40000C6AD68 /* APIHandlerAssembler.swift in Sources */,
 				CB4E09E723FEEED700C6AD68 /* ViewController.swift in Sources */,
-				CB4E0A2623FFC4D500C6AD68 /* DataModel.swift in Sources */,
+				CB4E0A2623FFC4D500C6AD68 /* verificationResponseModel.swift in Sources */,
 				CB4E09E323FEEED700C6AD68 /* AppDelegate.swift in Sources */,
+				CB221E55242F389900B5E701 /* String.swift in Sources */,
 				CB4E0A2123FEF90B00C6AD68 /* ApiHandler.swift in Sources */,
 				CB4E0A1523FEF3CC00C6AD68 /* APIHandlerAlamofireImpl.swift in Sources */,
 				CB4E0A1A23FEF41600C6AD68 /* ViewModelAssembler.swift in Sources */,
+				CB3C95DD2420E91900F5F3E0 /* urlstatus.swift in Sources */,
 				CB4E0A1F23FEF4EE00C6AD68 /* View.swift in Sources */,
 				CB4E0A1323FEF26C00C6AD68 /* ViewModelImpl.swift in Sources */,
+				CB3C95DB2420E1FC00F5F3E0 /* URLConstants.swift in Sources */,
 				CB4E0A1D23FEF48C00C6AD68 /* ViewModel.swift in Sources */,
 				CB4E09E523FEEED700C6AD68 /* SceneDelegate.swift in Sources */,
 			);
@@ -514,12 +430,12 @@
 /* Begin PBXTargetDependency section */
 		CB4E09F723FEEED800C6AD68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB4E09DE23FEEED700C6AD68 /* Phising */;
+			target = CB4E09DE23FEEED700C6AD68 /* Phishing */;
 			targetProxy = CB4E09F623FEEED800C6AD68 /* PBXContainerItemProxy */;
 		};
 		CB4E0A0223FEEED800C6AD68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB4E09DE23FEEED700C6AD68 /* Phising */;
+			target = CB4E09DE23FEEED700C6AD68 /* Phishing */;
 			targetProxy = CB4E0A0123FEEED800C6AD68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -660,10 +576,10 @@
 		};
 		CB4E0A0A23FEEED800C6AD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED22E2F1C735D4D1D16C8CAA /* Pods-Phising.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQNTZJQ8J3;
 				INFOPLIST_FILE = Phising/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,10 +594,10 @@
 		};
 		CB4E0A0B23FEEED800C6AD68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7A734C221E76C5E44D0E272 /* Pods-Phising.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQNTZJQ8J3;
 				INFOPLIST_FILE = Phising/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -696,7 +612,6 @@
 		};
 		CB4E0A0D23FEEED800C6AD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74FE853F5A69C70651AF86EC /* Pods-PhisingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -712,13 +627,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phising.app/Phising";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phishing.app/Phishing";
 			};
 			name = Debug;
 		};
 		CB4E0A0E23FEEED800C6AD68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67479BF19FE76D252E648E18 /* Pods-PhisingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -734,13 +648,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phising.app/Phising";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phishing.app/Phishing";
 			};
 			name = Release;
 		};
 		CB4E0A1023FEEED800C6AD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DDA54878FF404DEF92C56DC /* Pods-Phising-PhisingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -760,7 +673,6 @@
 		};
 		CB4E0A1123FEEED800C6AD68 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 185D806F6D42AB905AB506CF /* Pods-Phising-PhisingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -781,7 +693,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB4E09DA23FEEED700C6AD68 /* Build configuration list for PBXProject "Phising" */ = {
+		CB4E09DA23FEEED700C6AD68 /* Build configuration list for PBXProject "Phishing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB4E0A0723FEEED800C6AD68 /* Debug */,
@@ -790,7 +702,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB4E0A0923FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "Phising" */ = {
+		CB4E0A0923FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "Phishing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB4E0A0A23FEEED800C6AD68 /* Debug */,
@@ -799,7 +711,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB4E0A0C23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingTests" */ = {
+		CB4E0A0C23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhishingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB4E0A0D23FEEED800C6AD68 /* Debug */,
@@ -808,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB4E0A0F23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhisingUITests" */ = {
+		CB4E0A0F23FEEED800C6AD68 /* Build configuration list for PBXNativeTarget "PhishingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB4E0A1023FEEED800C6AD68 /* Debug */,
